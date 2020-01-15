@@ -15,6 +15,11 @@
 		1DA60EE623CE3C94008578D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA60EE423CE3C94008578D2 /* LaunchScreen.storyboard */; };
 		1DA60EF123CE3C94008578D2 /* EberryAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60EF023CE3C94008578D2 /* EberryAssignmentTests.swift */; };
 		1DA60F0123CE6129008578D2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F0023CE6129008578D2 /* Logger.swift */; };
+		1DA60F0323CF5B17008578D2 /* UtilServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F0223CF5B17008578D2 /* UtilServices.swift */; };
+		1DA60F0523CF5B55008578D2 /* GetShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F0423CF5B55008578D2 /* GetShows.swift */; };
+		1DA60F0723CF5BC4008578D2 /* URLServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F0623CF5BC4008578D2 /* URLServices.swift */; };
+		1DA60F0923CF5C86008578D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F0823CF5C86008578D2 /* Constants.swift */; };
+		1DA60F0B23CF5D79008578D2 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F0A23CF5D79008578D2 /* Show.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		1DA60EF023CE3C94008578D2 /* EberryAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EberryAssignmentTests.swift; sourceTree = "<group>"; };
 		1DA60EF223CE3C94008578D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DA60F0023CE6129008578D2 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		1DA60F0223CF5B17008578D2 /* UtilServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilServices.swift; sourceTree = "<group>"; };
+		1DA60F0423CF5B55008578D2 /* GetShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShows.swift; sourceTree = "<group>"; };
+		1DA60F0623CF5BC4008578D2 /* URLServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLServices.swift; sourceTree = "<group>"; };
+		1DA60F0823CF5C86008578D2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1DA60F0A23CF5D79008578D2 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,8 @@
 				1DA60EE223CE3C94008578D2 /* Assets.xcassets */,
 				1DA60EE423CE3C94008578D2 /* LaunchScreen.storyboard */,
 				1DA60EE723CE3C94008578D2 /* Info.plist */,
+				1DA60F0623CF5BC4008578D2 /* URLServices.swift */,
+				1DA60F0823CF5C86008578D2 /* Constants.swift */,
 			);
 			path = EberryAssignment;
 			sourceTree = "<group>";
@@ -110,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				1DA60F0023CE6129008578D2 /* Logger.swift */,
+				1DA60F0223CF5B17008578D2 /* UtilServices.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -124,6 +137,7 @@
 		1DA60EFD23CE3D1E008578D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1DA60F0A23CF5D79008578D2 /* Show.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +145,7 @@
 		1DA60EFE23CE3D26008578D2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1DA60F0423CF5B55008578D2 /* GetShows.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -243,10 +258,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA60F0323CF5B17008578D2 /* UtilServices.swift in Sources */,
+				1DA60F0523CF5B55008578D2 /* GetShows.swift in Sources */,
 				1DA60EDE23CE3C91008578D2 /* ViewController.swift in Sources */,
+				1DA60F0723CF5BC4008578D2 /* URLServices.swift in Sources */,
 				1DA60EDA23CE3C91008578D2 /* AppDelegate.swift in Sources */,
 				1DA60EDC23CE3C91008578D2 /* SceneDelegate.swift in Sources */,
+				1DA60F0B23CF5D79008578D2 /* Show.swift in Sources */,
 				1DA60F0123CE6129008578D2 /* Logger.swift in Sources */,
+				1DA60F0923CF5C86008578D2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
