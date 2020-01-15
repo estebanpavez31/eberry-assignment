@@ -22,6 +22,7 @@
 		1DA60F0F23CFAAD0008578D2 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F0E23CFAAD0008578D2 /* Show.swift */; };
 		1DA60F1123CFAAE4008578D2 /* ShowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F1023CFAAE4008578D2 /* ShowImage.swift */; };
 		1DA60F1623CFAD8D008578D2 /* ShowsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F1523CFAD8D008578D2 /* ShowsListController.swift */; };
+		1DA60F1823CFBC0D008578D2 /* ShowTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F1723CFBC0D008578D2 /* ShowTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1DA60F0E23CFAAD0008578D2 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		1DA60F1023CFAAE4008578D2 /* ShowImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImage.swift; sourceTree = "<group>"; };
 		1DA60F1523CFAD8D008578D2 /* ShowsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListController.swift; sourceTree = "<group>"; };
+		1DA60F1723CFBC0D008578D2 /* ShowTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				1DA60F1523CFAD8D008578D2 /* ShowsListController.swift */,
+				1DA60F1723CFBC0D008578D2 /* ShowTableCell.swift */,
 			);
 			path = Shows;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				1DA60EDC23CE3C91008578D2 /* SceneDelegate.swift in Sources */,
 				1DA60F0B23CF5D79008578D2 /* ShowList.swift in Sources */,
 				1DA60F1123CFAAE4008578D2 /* ShowImage.swift in Sources */,
+				1DA60F1823CFBC0D008578D2 /* ShowTableCell.swift in Sources */,
 				1DA60F1623CFAD8D008578D2 /* ShowsListController.swift in Sources */,
 				1DA60F0123CE6129008578D2 /* Logger.swift in Sources */,
 				1DA60F0F23CFAAD0008578D2 /* Show.swift in Sources */,
