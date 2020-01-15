@@ -42,7 +42,7 @@ class GetShows: NSObject, URLSessionDelegate {
         let decoder = JSONDecoder()
 
         do {
-            let shows = try decoder.decode([Shows].self, from: data ?? Data())
+            let shows = try decoder.decode([ShowsList].self, from: data ?? Data())
 
             Logger.log("Parsing Shows Succeded")
 

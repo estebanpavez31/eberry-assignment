@@ -2,18 +2,13 @@
 //  Show.swift
 //  EberryAssignment
 //
-//  Model Class with information of shows
+//  Model Class with the information of a single show
 //
 //  Created by Esteban Pavez on 2020-01-15.
 //  Copyright © 2020 Esteban Pavez. All rights reserved.
 //
 
 import Foundation
-
-struct Shows: Decodable {
-    var score: Double!
-    var show: Show!
-}
 
 struct Show: Decodable {
     var name: String!
@@ -22,9 +17,3 @@ struct Show: Decodable {
     var summary: String!
     var image: ShowImage!
 }
-
-struct ShowImage: Decodable {
-    var medium: String!
-    var original: String!
-}
-
