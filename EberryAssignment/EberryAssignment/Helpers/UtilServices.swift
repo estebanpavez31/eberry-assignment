@@ -10,7 +10,7 @@
 
 import UIKit
 
-class UtilServices {
+struct UtilServices {
 
     /// Get the list of places with the Place object array
     /// - Parameter onCompletion: Places array with the type Place

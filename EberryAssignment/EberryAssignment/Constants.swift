@@ -12,6 +12,11 @@ import Foundation
 
 struct Constants {
 
+    struct Font {
+        // Font for rockwell type
+        static var rockwell = "Rockwell"
+    }
+
     struct Services {
         // Max time out that will take to call the services in seconds
         static var timeOut = Double(15)

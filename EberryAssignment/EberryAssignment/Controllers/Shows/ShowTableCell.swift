@@ -27,20 +27,9 @@ class ShowTableCell: UITableViewCell {
         lblNameShow.text = show.name
         imgIconShow.image = iconShow
 
-        // Sets the string with the description to show it with the format of HTML
-        let htmlString = show.summary
-        let data = htmlString!.data(using: String.Encoding.unicode)!
-
-        do {
-            let attrStr = try NSAttributedString(
-                data: data,
-                options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html],
-                documentAttributes: nil)
-            lblDescriptionShow.attributedText = attrStr
-        } catch {
-            lblDescriptionShow.isHidden = true
-        }
+        Util.setStringWithHTTPFormat(stringHTTP: show.summary, labelToAssignFormat: lblDescriptionShow)
 
         lblDescriptionShow.textColor = .white
+
     }
 }

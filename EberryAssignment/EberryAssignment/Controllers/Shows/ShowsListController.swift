@@ -17,7 +17,6 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
     /// Table view where the tv shows are listed
     @IBOutlet weak var tableViewShows: UITableView!
 
-
     /// List of objects with the tv shows
     var showsList = [Show]()
     /// List of the images of the tv shows related, if there are no images related there is an empty UIImage
@@ -57,6 +56,21 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
         cellShow?.setData(show: showsList[indexPath.row], iconShow: showsListImages[indexPath.row])
 
         return cellShow!
+    }
+
+    /// Defines the action to do when a cell is tapped
+    /// - Parameters:
+    ///   - tableView: Tableview of products
+    ///   - indexPath: Indexpath with the current row and section indexes
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let showDetailController = storyBoard.instantiateViewController(withIdentifier: "showDetailController") as! ShowDetailController
+
+        showDetailController.tvShowInfo = showsList[indexPath.row]
+
+        self.present(showDetailController, animated: true, completion: nil)
+
+        showDetailController.setData(show: showsList[indexPath.row], iconShow: showsListImages[indexPath.row])
     }
 
     /// Creates an array of the icons in memory from the URL si it does not load everytime when the user scrolls

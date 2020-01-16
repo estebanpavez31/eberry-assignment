@@ -15,5 +15,6 @@ struct Show: Decodable {
     var officialSite: String!
     var status: String!
     var summary: String!
+    var rating: ShowRating!
     var image: ShowImage!
 }
