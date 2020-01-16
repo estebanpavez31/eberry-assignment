@@ -8,8 +8,6 @@
 //  Copyright © 2020 Esteban Pavez. All rights reserved.
 //
 
-import Foundation
-
 import UIKit
 
 class ShowDetailController: UIViewController {
@@ -37,23 +35,32 @@ class ShowDetailController: UIViewController {
     func setData(show: Show, iconShow: UIImage) {
         let fontSizeDescription = CGFloat(17)
 
-        if show.rating.average == nil {
-            lblRating.isHidden = true
-            imgStarIcon.isHidden = true
-        } else {
-            lblRating.text = String(show.rating.average)
-        }
+        setRating(show: show)
 
         lblNameShow.text = show.name
         imgIconShow.image = iconShow
         lblStatusShow.text = show.status
 
-        Util.setStringWithHTTPFormat(stringHTTP: show.summary, labelToAssignFormat: lblDescriptionShow)
+        if show.summary != nil {
+            Util.setStringWithHTTPFormat(stringHTTP: show.summary, labelToAssignFormat: lblDescriptionShow)
+        }
 
         lblDescriptionShow.textColor = .white
         lblDescriptionShow.textAlignment = .center
         lblDescriptionShow.font = UIFont(name: Constants.Font.rockwell, size: fontSizeDescription)
 
+    }
+
+    /// Check if the rating exists to assign it, if not it hides and center the name of the tv show
+    /// - Parameter show: Object with the data of the tv show
+    func setRating(show: Show) {
+        if show.rating.average == nil {
+            lblRating.isHidden = true
+            imgStarIcon.isHidden = true
+            lblNameShow.center.x = self.view.center.x
+        } else {
+            lblRating.text = String(show.rating.average)
+        }
     }
 
     /// Open the official website of the tv show in a external browser

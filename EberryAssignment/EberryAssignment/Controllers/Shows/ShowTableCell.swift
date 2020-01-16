@@ -27,7 +27,9 @@ class ShowTableCell: UITableViewCell {
         lblNameShow.text = show.name
         imgIconShow.image = iconShow
 
-        Util.setStringWithHTTPFormat(stringHTTP: show.summary, labelToAssignFormat: lblDescriptionShow)
+        if show.summary != nil {
+            Util.setStringWithHTTPFormat(stringHTTP: show.summary, labelToAssignFormat: lblDescriptionShow)
+        }
 
         lblDescriptionShow.textColor = .white
 

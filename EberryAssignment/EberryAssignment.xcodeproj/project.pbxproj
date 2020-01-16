@@ -26,6 +26,7 @@
 		1DA60F1C23D0BBB8008578D2 /* ShowDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F1B23D0BBB8008578D2 /* ShowDetailController.swift */; };
 		1DA60F1E23D0BD58008578D2 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F1D23D0BD58008578D2 /* Util.swift */; };
 		1DA60F2023D0CC5D008578D2 /* ShowRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F1F23D0CC5D008578D2 /* ShowRating.swift */; };
+		1DA60F2223D0F22F008578D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DA60F2123D0F22F008578D2 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		1DA60F1B23D0BBB8008578D2 /* ShowDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailController.swift; sourceTree = "<group>"; };
 		1DA60F1D23D0BD58008578D2 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		1DA60F1F23D0CC5D008578D2 /* ShowRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRating.swift; sourceTree = "<group>"; };
+		1DA60F2123D0F22F008578D2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				1DA60EE723CE3C94008578D2 /* Info.plist */,
 				1DA60F0623CF5BC4008578D2 /* URLServices.swift */,
 				1DA60F0823CF5C86008578D2 /* Constants.swift */,
+				1DA60F2123D0F22F008578D2 /* Localizable.strings */,
 			);
 			path = EberryAssignment;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA60EE623CE3C94008578D2 /* LaunchScreen.storyboard in Resources */,
+				1DA60F2223D0F22F008578D2 /* Localizable.strings in Resources */,
 				1DA60EE323CE3C94008578D2 /* Assets.xcassets in Resources */,
 				1DA60EE123CE3C91008578D2 /* Main.storyboard in Resources */,
 			);
