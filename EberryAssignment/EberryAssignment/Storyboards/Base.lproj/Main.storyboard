@@ -210,6 +210,7 @@ Type in the search box the name of the tv show that you want to look out.</strin
                         <viewLayoutGuide key="safeArea" id="KNM-a3-l3j"/>
                     </view>
                     <connections>
+                        <outlet property="btnOpenOfficialSite" destination="d4d-pj-ZRU" id="aSi-Sv-bfz"/>
                         <outlet property="imgIconShow" destination="A60-KK-Qt3" id="j92-no-GSz"/>
                         <outlet property="imgStarIcon" destination="qV4-qt-YNT" id="Bik-Li-FjU"/>
                         <outlet property="lblDescriptionShow" destination="Gjg-xk-gm3" id="uRT-Va-gLv"/>

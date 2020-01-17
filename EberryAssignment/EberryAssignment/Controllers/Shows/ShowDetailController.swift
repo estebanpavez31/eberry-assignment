@@ -24,6 +24,8 @@ class ShowDetailController: UIViewController {
     @IBOutlet weak var lblStatusShow: UILabel!
     /// Label with a summary of the show
     @IBOutlet weak var lblDescriptionShow: UILabel!
+    /// Button that open an external browser with the official site of the tv show
+    @IBOutlet weak var btnOpenOfficialSite: UIButton!
 
     /// Objet with the info of the tv show
     var tvShowInfo = Show()
@@ -49,6 +51,9 @@ class ShowDetailController: UIViewController {
         lblDescriptionShow.textAlignment = .center
         lblDescriptionShow.font = UIFont(name: Constants.Font.rockwell, size: fontSizeDescription)
 
+        if show.officialSite == nil {
+            btnOpenOfficialSite.isHidden = true
+        }
     }
 
     /// Check if the rating exists to assign it, if not it hides and center the name of the tv show
