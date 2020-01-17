@@ -27,6 +27,9 @@
 		1DA60F1E23D0BD58008578D2 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F1D23D0BD58008578D2 /* Util.swift */; };
 		1DA60F2023D0CC5D008578D2 /* ShowRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F1F23D0CC5D008578D2 /* ShowRating.swift */; };
 		1DA60F2223D0F22F008578D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DA60F2123D0F22F008578D2 /* Localizable.strings */; };
+		1DA60F2423D1E2BB008578D2 /* ShowDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F2323D1E2BB008578D2 /* ShowDataSource.swift */; };
+		1DA60F2623D1E3C2008578D2 /* Show+fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F2523D1E3C2008578D2 /* Show+fixture.swift */; };
+		1DA60F2823D1ED6A008578D2 /* FixtureConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F2723D1ED6A008578D2 /* FixtureConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		1DA60F1D23D0BD58008578D2 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		1DA60F1F23D0CC5D008578D2 /* ShowRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRating.swift; sourceTree = "<group>"; };
 		1DA60F2123D0F22F008578D2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1DA60F2323D1E2BB008578D2 /* ShowDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataSource.swift; sourceTree = "<group>"; };
+		1DA60F2523D1E3C2008578D2 /* Show+fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+fixture.swift"; sourceTree = "<group>"; };
+		1DA60F2723D1ED6A008578D2 /* FixtureConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				1DA60EE723CE3C94008578D2 /* Info.plist */,
 				1DA60F0623CF5BC4008578D2 /* URLServices.swift */,
 				1DA60F0823CF5C86008578D2 /* Constants.swift */,
+				1DA60F2723D1ED6A008578D2 /* FixtureConstants.swift */,
 				1DA60F2123D0F22F008578D2 /* Localizable.strings */,
 			);
 			path = EberryAssignment;
@@ -128,6 +135,7 @@
 			children = (
 				1DA60EF023CE3C94008578D2 /* EberryAssignmentTests.swift */,
 				1DA60EF223CE3C94008578D2 /* Info.plist */,
+				1DA60F2523D1E3C2008578D2 /* Show+fixture.swift */,
 			);
 			path = EberryAssignmentTests;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 				1DA60F1523CFAD8D008578D2 /* ShowsListController.swift */,
 				1DA60F1723CFBC0D008578D2 /* ShowTableCell.swift */,
 				1DA60F1B23D0BBB8008578D2 /* ShowDetailController.swift */,
+				1DA60F2323D1E2BB008578D2 /* ShowDataSource.swift */,
 			);
 			path = Shows;
 			sourceTree = "<group>";
@@ -307,7 +316,9 @@
 				1DA60F1123CFAAE4008578D2 /* ShowImage.swift in Sources */,
 				1DA60F1823CFBC0D008578D2 /* ShowTableCell.swift in Sources */,
 				1DA60F1623CFAD8D008578D2 /* ShowsListController.swift in Sources */,
+				1DA60F2423D1E2BB008578D2 /* ShowDataSource.swift in Sources */,
 				1DA60F0123CE6129008578D2 /* Logger.swift in Sources */,
+				1DA60F2823D1ED6A008578D2 /* FixtureConstants.swift in Sources */,
 				1DA60F1E23D0BD58008578D2 /* Util.swift in Sources */,
 				1DA60F0F23CFAAD0008578D2 /* Show.swift in Sources */,
 				1DA60F0923CF5C86008578D2 /* Constants.swift in Sources */,
@@ -318,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA60F2623D1E3C2008578D2 /* Show+fixture.swift in Sources */,
 				1DA60EF123CE3C94008578D2 /* EberryAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

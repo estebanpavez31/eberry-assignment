@@ -25,8 +25,8 @@ struct Constants {
     }
 
     struct Test {
-        // URL to test the call of the places service
-        static var urlPlaces = "https://secure.closepayment.com/close-admin/1.0/place/meappid?meAppId=50&records=42"
+        // URL to test the call of the tv shows API
+        static var urlShows = "https://api.tvmaze.com/search/shows?q=girls"
         // Max time out that will take to call the services
         static var timeOut = Double(5)
     }

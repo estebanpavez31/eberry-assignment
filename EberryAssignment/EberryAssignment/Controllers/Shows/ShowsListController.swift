@@ -27,9 +27,12 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
     var showsList = [Show]()
     /// List of the images of the tv shows related, if there are no images related there is an empty UIImage
     var showsListImages = [UIImage]()
+    /// DataSource to get the data cover by unit tests
+    var showDataSource = ShowDataSource(shows: [Show]())
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
     /// Do the service call with the search input by the user to get the tv shows
@@ -48,13 +51,14 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
     /// - Parameter shows: Array with tv shows obtained from the service
     func verifyTvShows(shows: [Show]) {
         if shows.count > 0 {
-            self.viewLoading.isHidden = true
-            self.showsList = shows
-            self.cachingImages()
-            self.tableViewShows.reloadData()
+            showDataSource.shows = shows
+            viewLoading.isHidden = true
+            showsList = shows
+            cachingImages()
+            tableViewShows.reloadData()
         } else {
-            self.viewLoading.isHidden = false
-            self.lblInfoSearch.text = NSLocalizedString("shows_not_found", comment: "message when no shows are found")
+            viewLoading.isHidden = false
+            lblInfoSearch.text = NSLocalizedString("shows_not_found", comment: "message when no shows are found")
         }
     }
 
@@ -70,7 +74,7 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
     ///   - tableView: TableView with tv shows
     ///   - section: Current section of the table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return showsList.count
+        return showDataSource.numberOfRows(inSection: section)
     }
 
     /// Sets the data in the table view cell of the tv show
