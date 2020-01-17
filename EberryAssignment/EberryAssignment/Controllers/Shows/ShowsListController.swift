@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ShowsListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ShowsListController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
 
     /// Text field where the user type the numbrer of a show
     @IBOutlet weak var txtFieldSearch: UITextField!
@@ -32,7 +32,6 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
     }
 
     /// Do the service call with the search input by the user to get the tv shows
@@ -67,6 +66,13 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
         viewLoading.isHidden = false
         lblInfoSearch.text = NSLocalizedString("loading_shows", comment: "Loading message while searching tv shows")
         activityIndicatorSearch.isHidden = false
+    }
+
+    /// Add action to the "Go" button inside keyboard to do the search of tv shows
+    /// - Parameter textField: Textfield who has the search function
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchShows("")
+        return true
     }
 
     /// Sets the amount of shows that it will be desplayed in the table view
