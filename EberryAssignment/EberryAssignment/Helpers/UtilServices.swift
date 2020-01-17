@@ -12,8 +12,8 @@ import UIKit
 
 struct UtilServices {
 
-    /// Get the list of places with the Place object array
-    /// - Parameter onCompletion: Places array with the type Place
+    /// Get the list of tv shows with the Show object array
+    /// - Parameter onCompletion: TV Shows array with the type Show
     static func getShows(_ showName: String, onCompletion: @escaping (_ shows: [Show]) -> Void) {
 
         GetShows.sharedInstance.getShows(showName) { (shows: [Show]) in
@@ -64,7 +64,7 @@ struct UtilServices {
     /// Do the service call with a get request
     /// - Parameters:
     ///   - path: URL of the service
-    ///   - onCompletion: JSON with places
+    ///   - onCompletion: Data object with the json in the response
     static func makeHTTPGetRequest(_ controller: URLSessionDelegate, urlComponents: URLComponents,
                                    onCompletion: @escaping ServiceResponse) {
 

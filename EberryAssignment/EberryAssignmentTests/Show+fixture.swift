@@ -2,6 +2,8 @@
 //  Show+fixture.swift
 //  EberryAssignmentTests
 //
+//  Fixture to create a test object for a tv show to help in unit testing
+//
 //  Created by Esteban Pavez on 2020-01-17.
 //  Copyright © 2020 Esteban Pavez. All rights reserved.
 //

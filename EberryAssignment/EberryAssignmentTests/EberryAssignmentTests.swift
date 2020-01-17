@@ -40,7 +40,7 @@ class EberryAssignmentTests: XCTestCase {
 
     func testCallServiceTVShowsListSuccess() {
       // given
-      let url = URL(string: Constants.Test.urlShows)
+      let url = URL(string: TestConstants.urlShows)
       let promise = expectation(description: "Completion handler invoked")
       var statusCode: Int?
       var responseError: Error?
@@ -52,7 +52,7 @@ class EberryAssignmentTests: XCTestCase {
         promise.fulfill()
       }
       dataTask.resume()
-        wait(for: [promise], timeout: Constants.Test.timeOut)
+        wait(for: [promise], timeout: TestConstants.timeOut)
 
       // then
       XCTAssertNil(responseError)

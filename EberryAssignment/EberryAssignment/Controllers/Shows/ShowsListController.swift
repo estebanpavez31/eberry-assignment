@@ -32,7 +32,7 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hideKeyboardWhenTappedAround()
     }
 
     /// Do the service call with the search input by the user to get the tv shows
@@ -129,6 +129,9 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
                 if let imageData = imageData {
                     // Appends the Icon to the array with the rest of Images
                     showsListImages.append(UIImage(data: imageData) ?? UIImage())
+                } else {
+                    // In the case if there is a problem loading the image, it adds an empty object
+                    showsListImages.append(UIImage())
                 }
             } else {
                 // In the case that there is no image associated with the show it adds an empty image
@@ -142,8 +145,9 @@ class ShowsListController: UIViewController, UITableViewDataSource, UITableViewD
     /// Action of the search button with the text field
     /// - Parameter sender: sender who realizes the action
     @IBAction func searchShows(_ sender: Any) {
-
         let showSearchInput = txtFieldSearch.text
+
+        self.dismissKeyboard()
 
         if showSearchInput != "" {
             searchTVShows(showName: showSearchInput ?? "")

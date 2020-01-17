@@ -2,6 +2,8 @@
 //  GetShows.swift
 //  EberryAssignment
 //
+//  Service class to get the list of tv shows searched by the user
+//
 //  Created by Esteban Pavez on 2020-01-15.
 //  Copyright © 2020 Esteban Pavez. All rights reserved.
 //
@@ -13,8 +15,8 @@ typealias ServiceResponse = (Data?, NSError?) -> Void
 class GetShows: NSObject, URLSessionDelegate {
     static let sharedInstance = GetShows()
 
-    /// Call the service via a HTTP GET request and get the json with places
-    /// - Parameter onCompletion: JSON with places
+    /// Call the service via a HTTP GET request and get the json with shows
+    /// - Parameter onCompletion: JSON with shows
     func getShows(_ showName: String, onCompletion: @escaping ([Show]) -> Void) {
         let baseURL = URLServices.urlShows
 
@@ -46,6 +48,7 @@ class GetShows: NSObject, URLSessionDelegate {
 
             Logger.log("Parsing Shows Succeded")
 
+            // Generates a cleaner list of tv shows
             var showsFinal = [Show]()
             for showObj in shows {
                 showsFinal.append(showObj.show)

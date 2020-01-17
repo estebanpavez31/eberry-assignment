@@ -2,6 +2,8 @@
 //  FixtureConstants.swift
 //  EberryAssignment
 //
+//  Constantes used to generate the fixtures objects in the testing environment
+//
 //  Created by Esteban Pavez on 2020-01-17.
 //  Copyright © 2020 Esteban Pavez. All rights reserved.
 //

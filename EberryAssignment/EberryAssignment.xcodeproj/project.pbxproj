@@ -30,6 +30,8 @@
 		1DA60F2423D1E2BB008578D2 /* ShowDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F2323D1E2BB008578D2 /* ShowDataSource.swift */; };
 		1DA60F2623D1E3C2008578D2 /* Show+fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F2523D1E3C2008578D2 /* Show+fixture.swift */; };
 		1DA60F2823D1ED6A008578D2 /* FixtureConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F2723D1ED6A008578D2 /* FixtureConstants.swift */; };
+		1DA60F2A23D2003F008578D2 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F2923D2003F008578D2 /* TestConstants.swift */; };
+		1DA60F2D23D20199008578D2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60F2C23D20199008578D2 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		1DA60F2323D1E2BB008578D2 /* ShowDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataSource.swift; sourceTree = "<group>"; };
 		1DA60F2523D1E3C2008578D2 /* Show+fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+fixture.swift"; sourceTree = "<group>"; };
 		1DA60F2723D1ED6A008578D2 /* FixtureConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureConstants.swift; sourceTree = "<group>"; };
+		1DA60F2923D2003F008578D2 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		1DA60F2C23D20199008578D2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		1DA60ED823CE3C91008578D2 /* EberryAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				1DA60F2B23D20049008578D2 /* Constants */,
 				1DA60EFB23CE3D10008578D2 /* Helpers */,
 				1DA60EFC23CE3D18008578D2 /* Controllers */,
 				1DA60EFD23CE3D1E008578D2 /* Models */,
@@ -118,13 +123,9 @@
 				1DA60EFF23CE3D35008578D2 /* Storyboards */,
 				1DA60ED923CE3C91008578D2 /* AppDelegate.swift */,
 				1DA60EDB23CE3C91008578D2 /* SceneDelegate.swift */,
-				1DA60EDF23CE3C91008578D2 /* Main.storyboard */,
 				1DA60EE223CE3C94008578D2 /* Assets.xcassets */,
-				1DA60EE423CE3C94008578D2 /* LaunchScreen.storyboard */,
 				1DA60EE723CE3C94008578D2 /* Info.plist */,
 				1DA60F0623CF5BC4008578D2 /* URLServices.swift */,
-				1DA60F0823CF5C86008578D2 /* Constants.swift */,
-				1DA60F2723D1ED6A008578D2 /* FixtureConstants.swift */,
 				1DA60F2123D0F22F008578D2 /* Localizable.strings */,
 			);
 			path = EberryAssignment;
@@ -146,6 +147,7 @@
 				1DA60F0023CE6129008578D2 /* Logger.swift */,
 				1DA60F0223CF5B17008578D2 /* UtilServices.swift */,
 				1DA60F1D23D0BD58008578D2 /* Util.swift */,
+				1DA60F2C23D20199008578D2 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -177,6 +179,8 @@
 		1DA60EFF23CE3D35008578D2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				1DA60EDF23CE3C91008578D2 /* Main.storyboard */,
+				1DA60EE423CE3C94008578D2 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -201,6 +205,16 @@
 				1DA60F2323D1E2BB008578D2 /* ShowDataSource.swift */,
 			);
 			path = Shows;
+			sourceTree = "<group>";
+		};
+		1DA60F2B23D20049008578D2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1DA60F2923D2003F008578D2 /* TestConstants.swift */,
+				1DA60F0823CF5C86008578D2 /* Constants.swift */,
+				1DA60F2723D1ED6A008578D2 /* FixtureConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,12 +326,14 @@
 				1DA60F0723CF5BC4008578D2 /* URLServices.swift in Sources */,
 				1DA60EDA23CE3C91008578D2 /* AppDelegate.swift in Sources */,
 				1DA60EDC23CE3C91008578D2 /* SceneDelegate.swift in Sources */,
+				1DA60F2D23D20199008578D2 /* Extensions.swift in Sources */,
 				1DA60F0B23CF5D79008578D2 /* ShowList.swift in Sources */,
 				1DA60F1123CFAAE4008578D2 /* ShowImage.swift in Sources */,
 				1DA60F1823CFBC0D008578D2 /* ShowTableCell.swift in Sources */,
 				1DA60F1623CFAD8D008578D2 /* ShowsListController.swift in Sources */,
 				1DA60F2423D1E2BB008578D2 /* ShowDataSource.swift in Sources */,
 				1DA60F0123CE6129008578D2 /* Logger.swift in Sources */,
+				1DA60F2A23D2003F008578D2 /* TestConstants.swift in Sources */,
 				1DA60F2823D1ED6A008578D2 /* FixtureConstants.swift in Sources */,
 				1DA60F1E23D0BD58008578D2 /* Util.swift in Sources */,
 				1DA60F0F23CFAAD0008578D2 /* Show.swift in Sources */,
