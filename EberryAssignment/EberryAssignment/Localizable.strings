@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  EberryAssignment
+
+  Created by Esteban Pavez on 2020-01-16.
+  Copyright © 2020 Esteban Pavez. All rights reserved.
+*/
+
+// Shows
+"loading_shows" = "Searching for TV shows...";
+"shows_not_found" = "No TV shows were found";
+
+
